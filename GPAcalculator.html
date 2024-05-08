@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<head>
+    
+    <title>GPA Calculator</title>
+    <style>
+        table, th, td {
+          border: 1px solid;
+          text-align: left;
+        }
+        </style>
+</head>
+<body>
+   
+    <script src="GPAcalculate.js"></script>
+
+ 
+  
+    
+    <!--Start Calculator-->
+    <div class="CalculatorBox">
+        <h1>GPA Calculator</h1>
+    
+    <form name="table_form" action="post">
+        <table  width="400" id="myTable">
+        <tbody id="table_body">
+            <tr>
+                <th>Subject Name</th><th>Credits</th><th>Marks</th>
+            </tr>
+            <tr>
+                <td><input type="text" size="30" value="Web Programming"></td>
+                <td><input size="5" type="number" value="4" ></td>
+                <td><input size="5" type="number" value="90" ></td>
+            </tr>
+            <tr>
+                <td><input type="text" size="30" value="Operating Systems"></td>
+                <td><input size="5" type="number" value="3" ></td>
+                <td><input size="5" type="number" value="85" ></td>
+            </tr>
+            <tr>
+                <td><input type="text" size="30" value="Object Oriented Programming"></td>
+                <td><input size="5" type="number" value="3" ></td>
+                <td><input size="5" type="number" value="85" ></td>
+            </tr>
+            <tr>
+                <td><input type="text" size="30" value="Database"></td>
+                <td><input size="5" type="number" value="3" ></td>
+                <td><input size="5" type="number" value="90" ></td>
+            </tr>
+            <tr>
+                <td><input type="text" size="30" value="Network Communications"></td>
+                <td><input size="5" type="number" value="3" ></td>
+                <td><input size="5" type="number" value="90" ></td>
+            </tr>
+            <tr>
+                <td><input type="text" size="30" value="Artificial Intelligence"></td>
+                <td><input size="5" type="number" value="2" ></td>
+                <td><input size="5" type="number" value="90" ></td>
+            </tr>
+        </tbody>
+        </table>
+    </form><!--End table form-->
+
+	<br/>
+    	
+    <input type="button" value="Add Subject" onclick="addNewSubject()">
+    <input type="button" value="Delete last Subject" onclick="deleteLastSubject()">
+    <input type="button" value="Calculate my GPA" onclick="sendElementToCalculate()">
+    
+
+    
+    <br/>
+    <br/>
+    Total Credits: <b class="output"></b>
+    <br/>
+    GPA:  <b class="output"></b>
+
+    </div> <!--End Calculator Box-->
+ 
+</body>
+</html>
